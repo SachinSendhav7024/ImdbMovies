@@ -13,7 +13,7 @@ const getMovies =async (url)=>{
     const res = await fetch(url);
     const data = await res.json();
     console.log(data)
-    if(data.Response =='True'){
+    if(data.Response ==='True'){
       setMovie(data);
       setIsLoading(false);
      }
